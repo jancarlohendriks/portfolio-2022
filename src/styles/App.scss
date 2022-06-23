@@ -1,0 +1,23 @@
+.section {
+	// --percentage: 0;
+	position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+	top: 0;
+	background-color: rgb(200, 200, 200);
+	&:not(:first-child) {
+		margin-top: -100px;
+		margin-left: calc(50px);
+		margin-right: calc(50px);
+		border-radius: 100px 100px 0 0;
+		transform: perspective(400px) rotateX(var(--percentage));
+	}
+}
+
+@for $i from 1 to 4 {
+	.section:nth-child(#{$i}) {
+		background-color: rgb(200 + 10 * -$i, 200 + 10 * -$i, 200 + 10 * -$i);
+	}
+}
