@@ -7,9 +7,7 @@ export const CardSection = ({ children }) => {
   });
 
   return (
-    // <section ref={ref} className="section" style={{transform: `rotateX(${percentage*50}deg)`}}>
     <section ref={ref} className="section">
-      {/* <h2>{`Percentage scrolled: ${percentage.toPrecision(2)}%.`}</h2> */}
       <div>{children}</div>
     </section>
   );

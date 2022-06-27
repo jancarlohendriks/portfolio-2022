@@ -7,18 +7,39 @@ function App() {
   return (
     <div className="App">
       <header className="section">
-				<div className="container grid">
-					<div className="content">
-						<nav>
-							<h2>Jan Carlo Hendriks</h2>
-							.socials
-						</nav>
-						<p>O programa Voyager consiste de um par de sondas, a Voyager 1 e a Voyager 2. Elas foram lançadas em 1977 aproveitando um alinhamento planetário favorável. Apesar de terem sido oficialmente planejadas para estudar apenas Júpiter e Saturno, as duas sondas foram capazes de continuar sua missão no sistema solar exterior.</p>
+				<nav className="nav container">
+					<h1 className="logo">Jan Carlo Hendriks</h1>
+					<ul className="socials">
+						<li><a href="">LinkedIn</a></li>
+						<li><a href="">GitHub</a></li>
+					</ul>
+				</nav>
+				<div className="content">
+					<div className="container grid">
+						<div className="col-5">
+							<p>O programa Voyager consiste de um par de sondas, a Voyager 1 e a Voyager 2. Elas foram lançadas em 1977 aproveitando um alinhamento planetário favorável. Apesar de terem sido oficialmente planejadas para estudar apenas Júpiter e Saturno, as duas sondas foram capazes de continuar sua missão no sistema solar exterior.</p>
+						</div>
 					</div>
 				</div>
 			</header>
-			<CardSection>Section 2</CardSection>
-			<CardSection>Section 3</CardSection>
+			<CardSection>
+				<div className="content">
+					<div className="container grid">
+						<div className="col-5">
+							<p>O programa Voyager consiste de um par de sondas, a Voyager 1 e a Voyager 2. Elas foram lançadas em 1977 aproveitando um alinhamento planetário favorável. Apesar de terem sido oficialmente planejadas para estudar apenas Júpiter e Saturno, as duas sondas foram capazes de continuar sua missão no sistema solar exterior.</p>
+						</div>
+					</div>
+				</div>
+			</CardSection>
+			<CardSection>
+				<div className="content">
+					<div className="container grid">
+						<div className="col-5">
+							<p>O programa Voyager consiste de um par de sondas, a Voyager 1 e a Voyager 2. Elas foram lançadas em 1977 aproveitando um alinhamento planetário favorável. Apesar de terem sido oficialmente planejadas para estudar apenas Júpiter e Saturno, as duas sondas foram capazes de continuar sua missão no sistema solar exterior.</p>
+						</div>
+					</div>
+				</div>
+			</CardSection>
     </div>
   );
 }
