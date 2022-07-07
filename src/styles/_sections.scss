@@ -2,14 +2,14 @@
 	position: sticky;
 	display: flex;
 	flex-direction: column;
-	padding: 1rem 0;
+	padding: 2rem 0;
   min-height: 100vh;
 	top: 0;
 	background-color: rgb(200, 200, 200);
 
 	&:nth-child(1) {
 		.content {
-			padding-top: 1.4rem;
+			padding-top: 2.09rem;
 		}
 	}
 	
@@ -17,14 +17,24 @@
 		top: 10vh;
 		min-height: 90vh;
 		margin-top: -10vh;
-		margin-left: calc(50px);
-		margin-right: calc(50px);
+		margin-left: 2rem;
+		margin-right: 2rem;
 		border-radius: 100px 100px 0 0;
 	}
 }
 
-@for $i from 1 to 4 {
+@for $i from 1 to 8 {
 	.section:nth-child(#{$i}) {
 		background-color: rgb(200 + 10 * -$i, 200 + 10 * -$i, 200 + 10 * -$i);
 	}
+}
+
+.footer {
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	padding: 2rem 0;
+  height: 10vh;
+	top: 0;
+	background-color: rgb(200, 200, 200);
 }
